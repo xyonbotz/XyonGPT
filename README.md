@@ -2,32 +2,10 @@
 XYONGPT
 AI WhatsApp Bot | XyonGPT
 </div>
-📖 Deskripsi
-XYONGPT adalah bot WhatsApp berbasis AI (Node.js & Baileys). Bot ini mendukung fitur chat personal, grup, dan memori percakapan. Mendukung login via QR Code maupun Pairing Code (tanpa scan).
-✨ Fitur Utama
- * 🤖 AI Chat - Respon otomatis berbasis AI.
- * 🧠 Memory - Mengingat konteks percakapan sebelumnya.
- * 📲 Pairing Code - Login mudah tanpa perlu scan QR.
- * 👥 Group Mention - Respon di grup hanya jika di-mention.
- * 🔒 Private Chat - Respon otomatis di PC.
- * 🛡️ Filter - Penyaring kata kasar/spam.
- * 🔌 AI Endpoint - Endpoint AI yang dapat dikonfigurasi.
-📂 Struktur Project
-XYONGPT/
-├── sessions/          # Data login WhatsApp (Auth info)
-├── src/
-│   ├── ai/            # Logic AI Endpoint
-│   ├── lib/           # Helper functions
-│   └── config.js      # Setting & API Key
-├── index.js           # Entry point
-├── package.json       # Dependencies
-└── README.md          # Dokumentasi
 
 🛠️ Instalasi & Pairing
- * Clone Repo
-   git clone [https://github.com/xyonbotz/XyonGPT.git](https://github.com/xyonbotz/XyonGPT.git)
-cd XyonGPT
-
+ * git clone [https://github.com/xyonbotz/XyonGPT.git](https://github.com/xyonbotz/XyonGPT.git)
+   cd XyonGPT
  * Install Dependencies
    npm install
 
@@ -66,9 +44,5 @@ npm start
  * Memory: Bot otomatis mengingat konteks chat per user.
 📝 Catatan
  * Node.js: Wajib versi 18+.
- * Sessions: Jangan upload folder sessions/ ke GitHub.
- * WebSocket: Menggunakan koneksi stabil via Baileys.
-🤝 Kontribusi
-Silakan Fork, buat fitur baru, lalu ajukan Pull Request.
-📄 Lisensi
-Distributed under the MIT License.
+ * Konto
+ * WebSocket: Menggunakan koneksi stabil 

@@ -1,0 +1,14 @@
+{
+  "name": "xyon-gpt",
+  "type": "module",
+  "scripts": {
+    "start": "node kasan.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "crypto": "^1.0.1",
+    "node-fetch": "^3.3.2",
+    "pino": "^8.16.0"
+  }
+}
+

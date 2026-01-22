@@ -1,51 +1,74 @@
-🚀 XYONGPT - AI WhatsApp Assistant
-XYONGPT adalah AI WhatsApp Assistant cerdas dengan context memory per user. Bot otomatis membalas private chat, sementara di grup hanya merespon jika di-mention. Dilengkapi smart filter & anti-ban basic, multi-device pairing, dan koneksi stabil. Dirancang untuk automation, AI response, dan modular system.
-Not affiliated with WhatsApp. Developed by Xyon Community / Shanove.
-⚡ Fitur Utama
-Private chat auto-reply
-Group mention only (hanya merespon jika di-mention)
-Memory per user (menyimpan history percakapan sementara)
-Smart filter & anti-ban basic
-Multi-device pairing
-Modular & easy to extend
-Stable websocket connection
-📁 Struktur Project
-project/
-├── index.js           → File utama bot
-├── package.json       → Dependencies & scripts
-├── sessions/          → Tempat session WA tersimpan
-└── lib/
-  ├── ai.js           → Integrasi XyonGPT API
-  ├── memory.js       → Penyimpanan history user
-  ├── group.js        → Logic group mention only
-  └── filter.js       → Anti-ban & smart filter
-⚙️ Instalasi & Jalankan
-Clone repository:
-git clone https://github.com/xyonbotz/XyonGPT.git
+<div align="center">
+XYONGPT
+AI WhatsApp Bot | XyonGPT
+</div>
+📖 Deskripsi
+XYONGPT adalah bot WhatsApp berbasis AI (Node.js & Baileys). Bot ini mendukung fitur chat personal, grup, dan memori percakapan. Mendukung login via QR Code maupun Pairing Code (tanpa scan).
+✨ Fitur Utama
+ * 🤖 AI Chat - Respon otomatis berbasis AI.
+ * 🧠 Memory - Mengingat konteks percakapan sebelumnya.
+ * 📲 Pairing Code - Login mudah tanpa perlu scan QR.
+ * 👥 Group Mention - Respon di grup hanya jika di-mention.
+ * 🔒 Private Chat - Respon otomatis di PC.
+ * 🛡️ Filter - Penyaring kata kasar/spam.
+ * 🔌 AI Endpoint - Endpoint AI yang dapat dikonfigurasi.
+📂 Struktur Project
+XYONGPT/
+├── sessions/          # Data login WhatsApp (Auth info)
+├── src/
+│   ├── ai/            # Logic AI Endpoint
+│   ├── lib/           # Helper functions
+│   └── config.js      # Setting & API Key
+├── index.js           # Entry point
+├── package.json       # Dependencies
+└── README.md          # Dokumentasi
+
+🛠️ Instalasi & Pairing
+ * Clone Repo
+   git clone [https://github.com/xyonbotz/XyonGPT.git](https://github.com/xyonbotz/XyonGPT.git)
 cd XyonGPT
-Install dependencies:
+
+ * Install Dependencies
+   npm install
+
+ * Jalankan Bot
+   npm start
+
+ * Koneksi (Pairing Code)
+   * Setelah bot berjalan, terminal akan meminta metode login.
+   * Pilih Pairing Code.
+   * Masukkan nomor WhatsApp bot (format: 628xxx).
+   * kode Akan Muncul Di Terminal.
+   * Buka WhatsApp di HP > Perangkat Tertaut > Tautkan Perangkat > Tautkan dengan nomor telepon.
+   * Masukkan kode tersebut.
+🚀 Deployment (Cara Menjalankan)
+Bot ini dapat dijalankan di berbagai platform:
+💻 Local / Android (Free)
+ * Windows/Mac/Linux: Jalankan di terminal/CMD sendiri.
+ * Termux (Android):
+   pkg install git nodejs -y
+git clone [https://github.com/xyonbotz/XyonGPT](https://github.com/xyonbotz/XyonGPT)
+cd XyonGPT
 npm install
-Jalankan bot:
 npm start
-Saat pertama kali dijalankan, bot akan meminta nomor WA untuk pairing code.
-Scan kode di WhatsApp Web / Business.
-Session akan otomatis tersimpan di folder sessions/.
-💡 Cara Penggunaan
-Private Chat: Bot akan otomatis membalas
-Group Chat: Bot hanya merespon jika di-mention
-Memory: History percakapan user disimpan di lib/memory.js (default max 10 pesan)
-Filter & Anti-ban: Spam, flood, dan kata terlarang otomatis di-skip
-Custom AI: Endpoint default: https://xyongpt.my.id/api (dapat diganti)
-🔗 GitHub & Link
-Repo & Dokumentasi: https://github.com/xyonbotz/XyonGPT
-📌 Catatan Tambahan
-Node.js >= 18.x direkomendasikan
-NODE_TLS_REJECT_UNAUTHORIZED diset ke 0 agar request API berjalan
-Hosting / VPS harus support WebSocket
-Jangan hapus folder sessions/ kecuali ingin reset bot
-🛠 Kontribusi
-Fork repo & buat plugin/modul di lib/
-Pull request diterima untuk fitur baru atau perbaikan
-📝 Lisensi
-MIT License © Xyon Community / Shanove
-Script ini open-source, siap dikembangkan siapa saja. Gunakan bot ini dengan bijak, jangan spam, dan patuhi aturan WhatsApp.
+
+☁️ Cloud Hosting (Free Tier/Trial)
+ * Replit: Mudah, namun sering disconnect jika akun free (Replit Hacker plan recommended).
+ * Render / Glitch: Bisa digunakan untuk testing, namun ada limitasi uptime/sleep mode.
+🏢 VPS & Panel (Paid/Professional)
+ * Panel Pterodactyl: Sangat direkomendasikan untuk bot WhatsApp (banyak jasa hosting bot WA murah).
+ * Heroku: Stabil, namun berbayar (Eco Dynos).
+ * Railway: Setup mudah, sistem credit/trial.
+ * VPS (DigitalOcean/Linode/AWS): Kontrol penuh, akses root, paling stabil untuk jangka panjang.
+📱 Cara Penggunaan
+ * Private Chat: Kirim pesan langsung ke bot.
+ * Group Chat: Mention bot (@XyonGPT) untuk memanggil.
+ * Memory: Bot otomatis mengingat konteks chat per user.
+📝 Catatan
+ * Node.js: Wajib versi 18+.
+ * Sessions: Jangan upload folder sessions/ ke GitHub.
+ * WebSocket: Menggunakan koneksi stabil via Baileys.
+🤝 Kontribusi
+Silakan Fork, buat fitur baru, lalu ajukan Pull Request.
+📄 Lisensi
+Distributed under the MIT License.
